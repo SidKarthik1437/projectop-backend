@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-3nw^kr&7#qvlzsu*g73%96jfxg%n#ojk$#9$)(*!l4^$_r6_=w
 DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.29.220', 'localhost',
-                 '192.168.29.138', '192.168.29.96', 'd2f1-2405-201-d001-dbe6-ed75-674e-515d-524a.ngrok.io', 'https://6e74-2405-201-d001-dbe6-b04d-2c5d-58a7-4d1.in.ngrok.io']
+                 '192.168.29.138', '192.168.29.96', '192.168.1.2']
 
 
 # Application definition
@@ -174,7 +174,7 @@ DJOSER = {
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
-        ),
+    ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
